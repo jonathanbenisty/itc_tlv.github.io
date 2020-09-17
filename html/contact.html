@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link href="../style.css" rel="stylesheet" />
+  <script src="https://kit.fontawesome.com/2ac67f3851.js" crossorigin="anonymous"></script>
+  <title>Contact</title>
+</head>
+
+<body>
+  <section>
+    <div class="page-wrapper"></div>
+    <div class="navbar">
+      <div class="menu">
+        <a href="../html/index.html"><strong>Home</strong></a>
+        <a href="../html/about.html"><strong>About</strong></a>
+        <a href="../html/contact.html"><strong>Contact</strong></a>
+      </div>
+      <div class="social-media">
+        <ul>
+          <a href="https://www.linkedin.com/in/jonathan-benisty-03b60948/" target="_blank"><i
+              class="fab fa-linkedin"></i></a>
+          <a href="https://stackoverflow.com/users/14204108/jonathan-b" target="_blank"><i
+              class="fab fa-stack-overflow"></i></a>
+          <a href="https://github.com/jonathanbenisty" target="_blank"><i class="fab fa-github"></i></a>
+        </ul>
+      </div>
+    </div>
+    <div class="card 3">
+        <form method="POST" action="https://e3vwdl4bpd.execute-api.us-west-2.amazonaws.com/default/API2SES">
+          <fieldset class="re">
+            <label for="name" class="wr">First name (*):</label>
+            <input type="text" id="name" name="name" autofocus required>
+            <label for="name" class="wr">Last Name:</label>
+            <input type="text" id="name" name="phone">
+            <label for="email" class="wr">Email (*):</label></br>
+            <input type="email" id="email" name="email" required></br>
+
+            </br>
+
+            <label for="comments" class="wr">Subject (*):</label>
+            <textarea id="comments" name="comments" required></textarea>
+
+            <label for="OS"></label>
+            <form>
+              <input type="checkbox" id="OS1" name="OS1" value="macOS" required>
+              <label for="OS1" class="wr"> I allow you to use my data (*)</label><br>
+            </form></br></br></br></br></br>
+
+            <input id="send_to" type="hidden" name="send_to" value="jonathan.benisty@gmail.com">
+            <button class="btn prev " type="submit" disabled="disabled">Send</button>
+      </fieldset>
+      </form>
+    </div>
+     
+    </div>
+
+    <div class="footer">
+      <ul class="list-inline">
+        <li>
+          <a href="../html/index.html">Home</a>
+          <a href="../html/about.html">About</a>
+          <a href="../html/contact.html">Contact</a>
+        </li>
+      </ul>
+
+      <body onload="myFunction()">
+        <h1>This page was built using: <span id="myText"></span></h1>
+    
+    </div>
+  </section>
+</body>
+<script>
+let btnSend = document.querySelector('button');
+let input = document.querySelector("input")
+
+input.addEventListener('keyup', () => {
+  if (input.value.length < 1)
+
+    btnSend.disabled = true
+  else btnSend.disabled = false;
+
+});
+</script>
+<script src="../js/portfolio.js"></script>
+<script src="../js/forms.js"></script>
+
+</html>

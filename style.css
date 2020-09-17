@@ -1,0 +1,449 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:300,400,700|Roboto:400,700&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Roboto:100,300,400");
+@import url("https://fonts.googleapis.com/css?family=Sacramento&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+
+
+/*INDEX PAGE*/
+
+.navbar {
+  display: flex;
+  position: sticky;
+  top: 0;
+  /*width: 100vw; */
+  padding: 0 20px;
+  background-color: #0b132b;
+  overflow: hidden;
+  height: 60px;
+}
+
+/*section for the social media btn of menu*/
+.menu {
+  display: flex;
+  flex: 1;
+  align-items: center;
+  margin-right: 40px;
+}
+
+.menu a {
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  color:#edc973;
+  font-size: 18px;
+  padding: 20px 25px 18px 25px;
+}
+
+.menu a:hover {
+	background-color: #edc973;
+	color: black;
+}
+
+.menu a.active {
+  color: white;
+}
+
+#Jonathan-Benisty {
+  margin-left: 12px;
+}
+
+/* animated text itc fullstack*/
+.h4 {
+  color: #edc973;
+  text-shadow: 0 0 5px #ffa500, 0 0 15px #ffa500, 0 0 20px #ffa500, 0 0 40px #ffa500, 0 0 60px #ff0000, 0 0 10px #ff8d00, 0 0 98px #ff0000;
+  font-family: "Open Sans", sans-serif;
+  text-align: center;
+  animation: blink 12s infinite;
+  -webkit-animation: blink 12s infinite;
+  padding: 10px;
+}
+
+
+body {
+  background-image: linear-gradient(to bottom right, lightgray, white);
+  font-family: "Open Sans"; sans-serif;
+  font-size: 16px;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+}
+
+@-webkit-keyframes blink {
+  20%,
+  24%,
+  55% {
+    color: #111;
+    text-shadow: none;
+  }
+
+  0%,
+  19%,
+  21%,
+  23%,
+  25%,
+  54%,
+  56%,
+  100% {
+
+  text-shadow: 0 0 5px #ffa500, 0 0 15px #ffa500, 0 0 20px #ffa500, 0 0 40px #ffa500, 0 0 60px #ff0000, 0 0 10px #ff8d00, 0 0 98px #ff0000;
+    color: #fff6a9;
+  }
+}
+
+@keyframes blink {
+  20%,
+  24%,
+  55% {
+    color: #111;
+    text-shadow: none;
+  }
+
+  0%,
+  19%,
+  21%,
+  23%,
+  25%,
+  54%,
+  56%,
+  100% {
+
+
+  text-shadow: 0 0 5px #ffa500, 0 0 15px #ffa500, 0 0 20px #ffa500, 0 0 40px #ffa500, 0 0 60px #ff0000, 0 0 10px #ff8d00, 0 0 98px #ff0000;
+    color: #fff6a9;
+  }
+}
+
+.light {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 40px;
+  background: #161616;
+}
+
+/*button on*/
+
+#jo {
+  border-radius: 100px;
+  border: 4px outset #888;
+  position: relative;
+  display: inline-block;
+  padding: 10px 5px;
+  color: #eee;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  overflow: hidden;
+  
+  box-shadow: 0 0 10px rgb(0, 0, 0, 1);
+  font-family: "Open-Sans", sans-serif;
+  font-size: 15px;
+  font-weight: bolder;
+  text-decoration: none;
+  background:linear-gradient(160deg, #666, #444);
+  text-shadow: 0px 0px 2px rgba(0, 0, 0, .5);
+
+  transition: 0.2s;
+
+}
+
+#jo:active {
+  border: 3px outset #ddd;
+  color: #fff;
+  background: linear-gradient(160deg, #666, #444);
+  text-shadow: 0px 0px 4px #ccc;
+  box-shadow: 0 0 10px #fff, 0 0 40px #fff, 0 0 80px #fff;
+  transition-delay: 1s;
+}
+
+a span {
+  position: absolute;
+  display: block;
+}
+
+a span:nth-child(1) {
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 3px;
+  background: linear-gradient(90deg, transparent, #eee);
+}
+a:active span:nth-child(1) {
+  left: 100%;
+  transition: 1s;
+}
+
+a span:nth-child(2) {
+  top: -100%;
+  right: 0;
+  width: 3px;
+  height: 100%;
+  background: linear-gradient(180deg, transparent, #eee);
+}
+a:active span:nth-child(2) {
+  top: 100%;
+  transition: 1s;
+  transition-delay: 0.25s;
+}
+a span:nth-child(3) {
+  bottom: 0;
+  right: -100%;
+  width: 100%;
+  height: 3px;
+  background: linear-gradient(270deg, transparent, #eee);
+}
+a:active span:nth-child(3) {
+  right: 100%;
+  transition: 1s;
+  transition-delay: 0.5s;
+}
+
+a span:nth-child(4) {
+  bottom: -100%;
+  left: 0;
+  width: 3px;
+  height: 100%;
+  background: linear-gradient(360deg, transparent, #eee);
+}
+a:active span:nth-child(4) {
+  bottom: 100%;
+  transition: 1s;
+  transition-delay: 0.75s;
+}
+
+/*background image index page*/
+
+.card {
+  background-image: url("https://www.desktopbackground.org/download/1600x900/2010/05/12/16391_wallpaper-minimalist-desktop-wallpapers-minimalistic-1800381_1920x1200_h.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  border-radius: 10px;
+  -webkit-box-shadow: 4px 4px 40px 0px rgba(0, 0, 0, 1);
+  -moz-box-shadow: 4px 4px 40px 0px rgba(0, 0, 0, 1);
+  box-shadow: 4px 4px 40px 0px rgba(0, 0, 0, 1);
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  flex: 1;
+  margin: 50px;
+  padding: 50px;
+  height: 650px;
+}
+
+.card2 {
+  background-image: url("https://www.desktopbackground.org/download/1600x900/2010/05/12/16391_wallpaper-minimalist-desktop-wallpapers-minimalistic-1800381_1920x1200_h.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  border-radius: 10px;
+  -webkit-box-shadow: 4px 4px 40px 0px rgba(0, 0, 0, 1);
+  -moz-box-shadow: 4px 4px 40px 0px rgba(0, 0, 0, 1);
+  box-shadow: 4px 4px 40px 0px rgba(0, 0, 0, 1);
+  display: flex;
+  align-items: baseline;
+  flex-direction: column;
+  justify-content: center;
+  flex: 1;
+  margin: 50px;
+  padding: 50px;
+  height: 650px;
+  float: left;
+}
+
+.card2 h2 {
+  color: #edc973;
+}
+.card2 h3 {
+  color: #fffdfe;
+  line-height: 28px;
+
+}
+
+.card3 {
+  background-image: url("https://www.desktopbackground.org/download/1600x900/2010/05/12/16391_wallpaper-minimalist-desktop-wallpapers-minimalistic-1800381_1920x1200_h.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  border-radius: 10px;
+  -webkit-box-shadow: 4px 4px 40px 0px rgba(0, 0, 0, 1);
+  -moz-box-shadow: 4px 4px 40px 0px rgba(0, 0, 0, 1);
+  box-shadow: 4px 4px 40px 0px rgba(0, 0, 0, 1);
+  display: flex;
+  align-items: baseline;
+  flex-direction: column;
+  justify-content: center;
+  flex: 1;
+  margin: 50px;
+  padding: 50px;
+  height: 650px;
+}
+
+.card4 {
+ display: flex;
+ justify-content: center;
+ float: right;
+ flex-direction: row;
+ position: relative;
+ top: 140px;
+ right: 160px;
+ border: 4px solid black;
+}
+
+.re {
+  border: 3px solid white;
+}
+
+
+.wr {
+  color:#fffdfe;
+  font-weight: 600;
+}
+
+#Jonathan-Benisty {
+  color:#f2f2f2
+}
+
+/* itc trademark index page*/
+.itc {
+margin-left: 48px;
+}
+
+.profile-image {
+  background-color: black;
+  border-radius: 50%;
+  color: white;
+  font-size: 32px;
+  height: 180px;
+  margin: 50px;
+  width: 180px;
+  border: 2px solid#FEFEFE;
+}
+
+
+/*swiper for map*/
+.swiper-container {
+    position: relative;
+    padding: 0px;
+    margin: 0px;
+    top: 115px;
+    left: -170px;
+}
+
+.swiper-slide {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+/*button swiper about page*/
+.btns  {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  top: 140px;
+  right: 110px;
+  color: #edc973;
+  font-size: 20px;
+  border-color: transparent;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+
+/* button form page*/
+.btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color:black;
+  color: #edc973;
+  font-size: 20px;
+  padding: 5px 20px;
+  border-color: white;
+  border-radius: 5px;
+  cursor: pointer;
+
+}
+
+.btn:disabled {
+  cursor: not-allowed;
+  color: red;
+  font-weight: 500;
+}
+
+.social-media {
+    display: flex;
+    align-items: center;
+    margin-right: 30px;
+}
+.social-media ul {
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+.social-media a {
+  display: flex;
+  list-style-type: none;
+  font-size: 20px;
+  padding: 0 0 0 24px;
+  color: #ccae68;
+}
+
+
+.social-media a:hover {
+  color: #f2f2f2;
+}
+
+
+/* Style inputs with type="text", select elements and textareas */
+input[type=text], select, textarea {
+  width: 100%; 
+  padding: 12px; 
+  border: 1px solid #ccc; 
+  border-radius: 4px; 
+  box-sizing: border-box; /* Make sure that padding and width stays in place */
+  margin-top: 6px; 
+  margin-bottom: 16px; 
+  resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+}
+
+
+.footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: #0b132b;
+  overflow: hidden;
+  height: 66px;
+}
+
+.footer a{
+	font-size: 17px;
+	color: #4c5163;
+  margin-left: 8px;
+  list-style-type: none;
+  text-decoration: none;
+  opacity: 0.8;
+}
+
+.footer a:hover {
+  color: #f2f2f2;
+}
+
+.footer h1 {
+  position: fixed;
+  bottom: 0px;
+  left: 50px;
+  color: #edc973;
+  OPACITY: 0.5;
+  font-size: 10px
+}
